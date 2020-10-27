@@ -3,6 +3,17 @@ type: docker
 name: greeting
 
 steps:
-  - name: ab
+  - name: en
+    image: alpine
     commands:
-      - echo hello abelzha
+      - echo hello world
+
+  - name: fr
+    image: alpine
+    commands:
+      - echo bonjour monde
+
+  - name: ab
+    image: alpine
+    commands:
+      - echo abelzhan
